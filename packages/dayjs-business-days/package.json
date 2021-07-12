@@ -1,0 +1,39 @@
+{
+  "name": "@backtolife/dayjs-business-days",
+  "version": "0.0.0-20216128300",
+  "description": "Day.js plugin to add support for calculating dates only accounting for Business days",
+  "author": "backtolife <floatshuyin@gmail.com>",
+  "homepage": "https://github.com/backtolife2021/dayjs-business-days/tree/main/packages/dayjs-business-days#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/dayjs-business-days.esm.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "files": [
+    "src",
+    "test",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backtolife2021/dayjs-business-days.git"
+  },
+  "scripts": {
+    "build": "tsdx build --entry src/index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/backtolife2021/dayjs-business-days/issues"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.10.5"
+  },
+  "devDependencies": {
+    "@backtolife/holidays-cn": "^0.0.0-20216128300"
+  }
+}

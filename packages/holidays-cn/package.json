@@ -1,0 +1,35 @@
+{
+  "name": "@backtolife/holidays-cn",
+  "version": "0.0.0-20216128300",
+  "description": "Check if a day is a China public holiday or a workday",
+  "homepage": "https://github.com/backtolife2021/dayjs-business-days/tree/main/packages/public-holidays-cn#readme",
+  "author": "backtolife <floatshuyin@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/holidays-cn.esm.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "files": [
+    "src",
+    "test",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backtolife2021/dayjs-business-days.git"
+  },
+  "scripts": {
+    "build": "tsdx build --entry src/index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/backtolife2021/dayjs-business-days/issues"
+  },
+  "devDependencies": {}
+}
