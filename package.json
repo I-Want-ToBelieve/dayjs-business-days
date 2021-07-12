@@ -1,0 +1,76 @@
+{
+  "name": "dayjs-business-days",
+  "version": "0.0.0",
+  "description": "Day.js plugin to add support for calculating dates only accounting for Business days",
+  "private": "true",
+  "author": "backtolife <floatshuyin@gmail.com>",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "version:pkgs": "changeset version",
+    "commit": "git-cz",
+    "test": "tsdx test",
+    "test:watch": "tsdx test --watch",
+    "test:coverage": "tsdx test --maxWorkers=50% --coverage",
+    "test:ci": "tsdx test --runInBand",
+    "build": "lerna run build --stream --sort",
+    "lint": "eslint --cache packages/**/{src,tests}",
+    "dedup": "yarn-deduplicate --strategy highest yarn.lock",
+    "release": "changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:backtolife2021/dayjs-business-days.git"
+  },
+  "keywords": [
+    "day.js",
+    "business",
+    "days",
+    "working",
+    "days",
+    "businessdays",
+    "workingdays"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/backtolife2021/dayjs-business-days/issues"
+  },
+  "homepage": "https://github.com/backtolife2021/dayjs-business-days#readme",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.0",
+    "@changesets/cli": "^2.16.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@jest/types": "^27.0.2",
+    "@quitsmx/eslint-config": "^0.5.4",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@types/ramda": "^0.27.40",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "axios": "^0.21.1",
+    "commitizen": "^4.2.4",
+    "concurrently": "^6.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "dayjs": "^1.10.5",
+    "eslint": "^7.27.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-testing-library": "^4.2.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.3",
+    "jest-watch-typeahead": "^0.6.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "https://github.com/aMarCruz/prettier.git",
+    "shx": "^0.3.3",
+    "ts-jest": "^27.0.2",
+    "ts-node": "^10.0.0",
+    "tsdx": "^0.14.1",
+    "typescript": "^4.3.3",
+    "yarn-deduplicate": "^3.1.0"
+  }
+}
